@@ -10,7 +10,7 @@ sys.path.append("../")  # add parent directory to path
 
 
 def train(path_to_dataset):
-    dataset = parse_directory_to_txt("sample_data")
+    dataset = parse_directory_to_txt(path_to_dataset)
     """
     dataset has the structure 
     {
