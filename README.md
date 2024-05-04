@@ -14,14 +14,15 @@ To train a document categorization model requires training data. A new training 
 Training data is categorized into folders. The folder name is the category name. The documents inside the folder can be any format.
 
 The dataset has to be stored with the following directory structure
-
+<pre>
 Top Level Directory
   Label1 
     file1 
-    file2 
+    file2
   Label2 
-    file1 
+    file1
     file2
 ... 
+</pre>
 
 Basically, the folder name is the label and inside the folder are pdf files. 
