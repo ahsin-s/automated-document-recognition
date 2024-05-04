@@ -2,11 +2,11 @@ import fastapi
 import pickle
 
 # Create a FastAPI app
-app = FastAPI()
+app = fastapi.FastAPI()
 
 
 # Load the machine learning model from the pickle file
-with open('model.pkl', 'rb') as file:
+with open('trained_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
