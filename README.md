@@ -25,4 +25,5 @@ Top Level Directory
 ... 
 </pre>
 
-Basically, the folder name is the label and inside the folder are pdf files. 
+Basically, the folder name is the label and inside the folder are pdf files.\
+Sample data has been provided in sample_data. 
