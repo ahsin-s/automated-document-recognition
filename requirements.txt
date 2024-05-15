@@ -8,3 +8,5 @@ accelerate
 torch
 bitsandbytes
 pandas
+pytest
+tabulate

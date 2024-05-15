@@ -9,11 +9,11 @@ import pandas as pd
 from document_processors import extension_processing_config
 
 
-def find_paths(root: str, extensions) -> List[Generator[Path]]:
+def find_paths(root: str, extensions) -> List[Generator[Path, None, None]]:
     return [Path(root).glob(f"**/*.{extension.lstrip('.')}") for extension in extensions]
 
 
-def crawl_directories(crawler_config: dict) -> List[Generator[Path]]:
+def crawl_directories(crawler_config: dict) -> Generator[Path, None, None]:
     directories: List[str] = crawler_config['directories']
     extensions: List[str] = crawler_config['extensions']
 
@@ -21,10 +21,10 @@ def crawl_directories(crawler_config: dict) -> List[Generator[Path]]:
     for directory in directories:
         all_paths += find_paths(directory, extensions)
 
-    return all_paths
+    return all_paths[0]
 
 
-def create_crawler_meta(paths: List[Generator: Path]) -> pd.DataFrame:
+def create_crawler_meta(paths: Generator[Path, None, None]) -> pd.DataFrame:
     df = pd.DataFrame(columns=["absolute_path", "extension", "status", "error_messages", "last_update_datetime"])
 
     for path in paths:
