@@ -4,3 +4,7 @@ pytesseract==0.3.10
 keras==3.3.3
 pdf2image==1.17.0
 fastapi==0.111.0
+accelerate
+torch
+bitsandbytes
+pandas
