@@ -1,5 +1,5 @@
 # automated-document-recognition
-Document recognition is the process of understanding document contact to determine a topic under which the document can be categorized.\
+Document recognition is the process of understanding document content to determine a topic under which the document can be categorized.\
 Many organizations have a team dedicated to the organization of documents into a semi-structured index consisting of a category.\
 An example of this is in the logistics and supply chain industry where document recognition is used to extract and classify bills of landing, invoices, shipping labels, customs paperwork, and compliance certifications.\
 While a manual process of categorizing documents works when the volume of data is small, there is a need for an AI-driven automated document recognition (ADR) that is needed to make categorization economical at large scale. 
