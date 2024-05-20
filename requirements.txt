@@ -10,3 +10,5 @@ bitsandbytes
 pandas
 pytest
 tabulate
+boto3
+PyPDF2
